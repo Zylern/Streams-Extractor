@@ -15,7 +15,15 @@ from script import Script
 async def start(client, message):
     await message.reply_text(
         text=Script.START_MSG.format(message.from_user.mention),
-        disable_web_page_preview=True
+        disable_web_page_preview=True,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton("HELP", callback_data="help_data")
+            ]
+          ]
+        ),
+        reply_to_message_id=message.message_id
     )
 
 
