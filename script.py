@@ -13,7 +13,7 @@ Send me any video file and extract what you want :).
 
 See <i>help</i> for more details.
 
-"""
+</b>"""
 
 
     HELP_MSG = """<b>Hola Follow these Steps..</b>
